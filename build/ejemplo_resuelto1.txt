@@ -1,0 +1,24 @@
+# Ejemplo de una MT
+# Reconoce cadenas de a^nb^m donde n > 0 y m > n
+q0 q1 q2 q3 q4 q5 q6 q7
+a b
+a b x y .
+q0
+.
+q7
+q0 a q1 a R
+q1 a q1 a R
+q1 b q2 b R
+q2 b q2 b R
+q2 . q3 . L
+q3 b q4 y L
+q4 a q4 a L
+q4 b q4 b L
+q4 . q5 . R
+q4 x q5 x R
+q5 y q7 y R
+q5 b q7 b R
+q5 a q6 x R
+q6 a q6 a R
+q6 b q6 b R
+q6 y q3 y L
